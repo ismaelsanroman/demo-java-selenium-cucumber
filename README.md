@@ -16,9 +16,11 @@ Este proyecto automatiza la interacción con la página [DemoQA](https://demoqa.
 
 ---
 
-## 💂️ Estructura del proyecto
+## 📂 Estructura del proyecto
 ```
-📺 demo-java-selenium-cucumber
+📦 demo-java-selenium-cucumber
+├── 📂 build                 # Carpeta de salida de compilación
+├── 📂 gradle                # Wrapper de Gradle
 ├── 📂 src/test/java
 │   ├── 📂 pages              # Implementación del Page Object Model (POM)
 │   │   ├── BasePage.java
@@ -32,13 +34,11 @@ Este proyecto automatiza la interacción con la página [DemoQA](https://demoqa.
 ├── 📂 src/test/resources
 │   ├── 📂 feature            # Escenarios de prueba en Gherkin
 │   │   ├── demoqa_textbox.feature
-├── 📂 target                 # Resultados de pruebas y reportes
-├── .gitignore                # Archivos ignorados por Git
 ├── build.gradle              # 📦 Dependencias y configuración del proyecto
 ├── gradle.properties         # Propiedades adicionales de Gradle
 ├── gradlew                   # Wrapper de Gradle para sistemas Unix
 ├── gradlew.bat               # Wrapper de Gradle para Windows
-├── README.md                 # 📚 Documentación del proyecto
+├── README.md                 # 📖 Documentación del proyecto
 ├── settings.gradle           # Configuración de Gradle
 ```
 
@@ -48,7 +48,7 @@ Este proyecto automatiza la interacción con la página [DemoQA](https://demoqa.
 
 ### 🔹 1. Clonar el repositorio
 ```sh
-git clone https://github.com/tu-usuario/demo-java-selenium-cucumber.git
+git clone https://github.com/ismaelsanroman/demo-java-selenium-cucumber.git
 cd demo-java-selenium-cucumber
 ```
 
@@ -60,7 +60,7 @@ gradlew.bat build # Windows
 
 ---
 
-## 🏃️‍♂️ Ejecución de las pruebas
+## 🏃‍♂️ Ejecución de las pruebas
 
 ### 🔹 1. Ejecutar las pruebas con Cucumber y TestNG
 ```sh
@@ -103,6 +103,6 @@ Feature: Rellenamos el formulario de TextBox
 ---
 
 ## 📌 Contacto
-[📧 Email](mailto:ismaelsanromansanchez@gmail.com)  
-[🤖 GitHub:](https://github.com/ismaelsanroman)  
+[📧 Email:](mailto:ismaelsanromansanchez@gmail.com)  
+[🐙 GitHub:](https://github.com/ismaelsanroman)  
 
