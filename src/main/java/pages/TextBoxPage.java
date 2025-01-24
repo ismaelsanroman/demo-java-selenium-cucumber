@@ -1,7 +1,6 @@
 package pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 public class TextBoxPage extends BasePage {
 
@@ -12,8 +11,8 @@ public class TextBoxPage extends BasePage {
     private By submitButton = By.id("submit");
     private By outputBox = By.id("output");
 
-    public TextBoxPage(WebDriver driver) {
-        super(driver);
+    public TextBoxPage() {
+        super();
     }
 
     public void fillForm(String fullName, String email, String currentAddress, String permanentAddress) {
