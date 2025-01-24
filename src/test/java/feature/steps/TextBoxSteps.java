@@ -41,7 +41,9 @@ public class TextBoxSteps {
     }
 
     @Then("el formulario es enviado correctamente")
-    public void el_formulario_es_enviado_correctamente() {
-        textBoxPage.verifyFormSubmission();
+    public void el_formulario_es_enviado_correctamente(DataTable dataTable) {
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        textBoxPage.verifyFormSubmission(data.get(0));
     }
+
 }

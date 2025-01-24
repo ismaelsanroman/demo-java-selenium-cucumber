@@ -19,6 +19,44 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Archivos y carpetas generadas por el sistema
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Archivos y carpetas de configuración del IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# Directorios de Gradle y archivos generados
+.gradle/
+build/
+out/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Directorios y archivos de Maven (si lo usas)
+target/
+
+# Caché y logs
+logs/
+*.tmp
+
+# Configuración local y archivos sensibles
+*.env
+*.properties
+*.local
+.secret
+
+# Reportes de pruebas y cobertura
+test-output/
+test-results/
+surefire-reports/
+allure-results/
+jacoco/
+cucumber-reports.html  # Excluir el reporte de Cucumber si no quieres que se suba
