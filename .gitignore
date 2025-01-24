@@ -37,11 +37,15 @@ ehthumbs.db
 # Directorios de Gradle y archivos generados
 .gradle/
 build/
+build/**/*
+!build.gradle  # Excepción para el archivo de configuración de Gradle
 out/
 !gradle/wrapper/gradle-wrapper.jar
 
 # Directorios y archivos de Maven (si lo usas)
 target/
+target/**/*
+!pom.xml  # Excepción para el archivo de configuración de Maven (si usas Maven)
 
 # Caché y logs
 logs/
