@@ -5,8 +5,8 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.Test;
 
 @CucumberOptions(
-    features = "src/test/resources/feature", 
-    glue = "feature.steps",
+    features = "src/test/resources/feature", // Ubicación de los archivos .feature
+    glue = "feature.steps", // Ahora apunta correctamente a los step definitions
     plugin = {"pretty", "html:target/cucumber-reports.html"},
     monochrome = true
 )
