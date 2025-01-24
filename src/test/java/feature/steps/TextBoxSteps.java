@@ -1,45 +1,32 @@
 package feature.steps;
 
-import io.cucumber.java.es.Dado;
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import io.cucumber.java.es.Cuando;
-import io.cucumber.java.es.Entonces;
+import io.cucumber.java.en.*;
 import io.cucumber.datatable.DataTable;
-import org.openqa.selenium.WebDriver;
+import pages.BasePage;
 import pages.TextBoxPage;
-import pages.HomePage;
-import pages.ElementsPage;
-import utils.DriverManager;
 import java.util.List;
 import java.util.Map;
 
 public class TextBoxSteps {
-    
-    private WebDriver driver;
-    private HomePage homePage;
-    private ElementsPage elementsPage;
+
+    private BasePage basePage;
     private TextBoxPage textBoxPage;
 
-    @Given("el usuario está en la página de DemoQA")
-    public void el_usuario_esta_en_la_pagina_de_demoqa() {
-        driver = DriverManager.getDriver();
-        driver.get("https://demoqa.com/");
-        homePage = new HomePage(driver);
-        elementsPage = new ElementsPage(driver);
-        textBoxPage = new TextBoxPage(driver);
+    @Given("el usuario está en la página de {string}")
+    public void el_usuario_esta_en_la_pagina_de_demoqa(String url) {
+        basePage = new BasePage();
+        textBoxPage = new TextBoxPage();
+        basePage.navigateToWeb(url);
     }
 
     @And("clicamos sobre el apartado {string}")
     public void clicamos_sobre_el_apartado(String section) {
-        homePage.clickOnSection(section);
+        basePage.clickOnSection(section);
     }
 
     @And("nos dirigimos a {string}")
     public void nos_dirigimos_a(String option) {
-        elementsPage.navigateToOption(option);
+        basePage.navigateToOption(option);
     }
 
     @When("interactúa con el formulario de registro")

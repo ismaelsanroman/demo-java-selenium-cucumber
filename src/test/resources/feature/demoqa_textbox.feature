@@ -1,7 +1,7 @@
 Feature: Rellenamos el formulario de TextBox
 
   Scenario: Rellenamos el formulario de TextBox
-    Given el usuario está en la página de DemoQA
+    Given el usuario está en la página de "https://demoqa.com/"
     And clicamos sobre el apartado "Elements"
     And nos dirigimos a "Text Box"
     When interactúa con el formulario de registro
