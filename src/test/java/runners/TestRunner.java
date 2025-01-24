@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 @CucumberOptions(
     features = "src/test/resources/feature", 
-    glue = "feature.steps",
+    glue = "steps",
     plugin = {"pretty", "html:target/cucumber-reports.html"},
     monochrome = true
 )
